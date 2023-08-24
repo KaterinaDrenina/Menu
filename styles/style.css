@@ -1,0 +1,97 @@
+@import url(./reset.css);
+@import url(../fonts/Roboto/stylesheet.css);
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.mainmenu {
+    display: flex;
+    align-items: center;    
+    background-color: #534f4f;
+    height: 60px;
+}
+
+.mainmenu a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.mainmenu-list {
+    display: flex;
+    gap: 20px;
+}
+
+.mainmenu-list li {
+    position: relative;
+}
+
+.mainmenu-list li:hover .submenu-list {
+    display: block;
+}
+
+.mainmenu-link:hover {
+    background-color: #6eff13;
+}
+
+.mainmenu-list li:hover .mainmenu-link {
+    background-color: #6eff13;
+}
+
+.submenu-list {
+    display: none;
+    position: absolute;
+    min-width: 270px;
+    top: 40px;
+    left: 0;
+    background-color: #6eff13;
+    padding-top: 5px;
+}
+
+.submenu-list li {
+    border: 1px solid rgb(6, 255, 6);
+    border-radius: 2px;
+}
+
+.submenu-list>li:hover .sub-submenu-list {
+    display: block;
+}
+
+.submenu-link {
+    display: inline-block;
+    position: relative;
+}
+
+.sub-submenu-list {
+    display: none;
+    position: absolute;
+    min-width: 270px;
+    top: 0;
+    left: 100%;
+    background-color: #6eff13;
+}
+
+.sub-submenu-list li {
+    border: 1px solid rgb(6, 255, 6);
+    border-radius: 5px;
+}
+
+.sub-submenu-link {
+    display: inline-block;
+    /* position: relative; */
+}
+
+span {
+    position: absolute;
+    top: 20px;
+    left: 230px;
+}
+
+.line {
+    height: 5px;
+    background-color: #6eff13;
+}
