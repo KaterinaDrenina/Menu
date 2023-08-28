@@ -1,6 +1,7 @@
 @import url(./reset.css);
 @import url(../fonts/Roboto/stylesheet.css);
 
+
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -18,7 +19,7 @@ body {
     font-weight: 300;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 20px;
+    padding: 21px;
 }
 
 .mainmenu-list {
@@ -28,6 +29,10 @@ body {
 
 .mainmenu-list li {
     position: relative;
+}
+
+.mainmenu-list li a {
+    display: block;
 }
 
 .mainmenu-list li:hover .submenu-list {
@@ -46,15 +51,19 @@ body {
     display: none;
     position: absolute;
     min-width: 270px;
-    top: 40px;
+    top: 58px;
     left: 0;
     background-color: #6eff13;
-    padding-top: 5px;
+    padding-top: 1px;
 }
 
 .submenu-list li {
     border: 1px solid rgb(6, 255, 6);
     border-radius: 2px;
+}
+
+.submenu-list li a {
+    display: block;
 }
 
 .submenu-list>li:hover .sub-submenu-list {
@@ -82,7 +91,6 @@ body {
 
 .sub-submenu-link {
     display: inline-block;
-    /* position: relative; */
 }
 
 span {
